@@ -1,0 +1,22 @@
+---
+output:
+  word_document: default
+  html_document: default
+---
+```{r}
+print('Sequence of number 20 to 50:')
+print(seq(20,50))
+print('Mean of number 20 to 60:')
+print(mean(20:60))
+print('Sum of number 51 to 91:')
+print(sum(51:91))
+```
+```{r}
+for(n in 1:100) {
+  if ( n %% 3 == 0 & n %% 5 == 0 ) {print('fizzbuzz')}
+  else if ( n %% 3 == 0 ) {print('fizz')}
+  else if ( n %% 5 == 0 ) {print('buzz')}
+  else print(n)
+}
+```
+
